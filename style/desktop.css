@@ -1,0 +1,25 @@
+/* =========================================================
+   Desktop Style
+   ========================================================= */
+@import url('variables.css');
+@media (min-width: 780px) {
+     .hamburger {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        margin-right: 15px;
+    } 
+    
+
+
+    /* .logo{
+        width: auto;
+    } */
+    
+    .main-nav a {
+        padding: 1px 1px;
+    } 
+
+}

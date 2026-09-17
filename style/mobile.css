@@ -1,0 +1,78 @@
+/* =========================================================
+   MOBILE
+   ========================================================= */
+@import url('variables.css');
+@media (max-width: 780px) {
+    .hamburger {
+        display: flex;
+        color: var(--color-text);
+        background: none;
+        border: 0px;   
+        font-size: 40px;
+        min-width: 70px;
+    } 
+    .mobileview{
+        display: block;
+    }
+
+    /* hides nav*/
+    .main-nav{
+        display: none;
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        padding:0px;
+        left: 0;
+        list-style-type: none;
+        background-color: var(--color-background);
+        text-align: center;
+        margin: 0px;
+        border-bottom: 5px solid var(--color-border);
+        gap: 5px;
+        padding-bottom: 20px;
+    }
+    
+    .main-nav.active {
+        display: flex;
+        flex-direction: column;
+    }
+    .main-nav li {
+        padding: 5px 1px;
+    }
+    .main-nav a {
+        font-size: x-large;
+        padding: 1px 1px;
+    } 
+
+   
+    .site-header-inner {
+        width: 100%;
+        gap: 50px;
+    }
+
+    .offer-grid,
+    .process-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Footer */
+
+    .footer-grid {
+        flex-direction: column;
+        justify-content: center;
+        /* align-items:center; */
+        gap: 24px;
+    }
+
+    .footer-links {
+        flex-direction: row;
+        flex-wrap: balance;
+        gap: 10px;
+    }
+
+    .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 70px;
+    }
+}
